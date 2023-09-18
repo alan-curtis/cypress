@@ -1,0 +1,72 @@
+.person-template-default {
+
+  .page-header {
+    border-bottom: 1px solid #003876;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+
+  .person-data-wrap {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #0a3975;
+
+    .accordion {
+      .accordion-item {
+        margin-bottom: 1rem;
+
+        .accordion-header {
+          color: #fcd422 !important;
+          font-size: 1rem !important;
+          background-color: #0a3975;
+          text-align: left;
+          padding: 0.6rem 1rem;
+          line-height: normal;
+          font-weight: bold !important;
+          outline: 0;
+          user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          -webkit-user-select: none;
+          position: relative;
+          margin-bottom: 0;
+
+          button {
+            background: transparent;
+            border-radius: 0;
+            border-width: 0;
+            display: block;
+            color: inherit;
+            font-weight: inherit;
+            width: 100%;
+            text-align: inherit;
+            outline: none;
+
+            &:after {
+              right: 1rem;
+              color: #fcd422;
+              font-weight: bold;
+              position: absolute;
+              top: 50%;
+              content: "+";
+              transform: translateY(-50%);
+            }
+
+            &[aria-expanded="true"]:after {
+              content: "\2212";
+            }
+          }
+        }
+        .accordion-body {
+          border: 1px solid #ced4da;
+          border-top-width: 0;
+          padding: 0.6rem 1rem;
+        }
+      }
+    }
+  }
+}

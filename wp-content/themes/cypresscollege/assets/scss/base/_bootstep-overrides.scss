@@ -1,0 +1,26 @@
+// Bootstrap variables overrides
+//$container-max-widths: (
+//        sm: 540px,
+//        md: 720px,
+//        lg: 960px,
+//        xl: 1248px
+//) !default;
+
+$white : #ffffff;
+$gray-600: #979797 !default;;
+$body-bg: $white;
+$theme-primary : #0a3975;
+
+$blue: #0a3975;
+$modern-blue: #1c75bc;
+$modern-cyan: #00aeef;
+$modern-gold: #fbb040;
+$modern-yellow: #fff200;
+$primary: $theme-primary;
+$yellow: #fcd422;
+
+// Carousel
+$carousel-indicator-width:0;
+$carousel-indicator-spacer:5px;
+$carousel-indicator-height:12px;
+$carousel-control-icon-width:40px;

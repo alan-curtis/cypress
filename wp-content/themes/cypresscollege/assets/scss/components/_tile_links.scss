@@ -1,0 +1,29 @@
+.tile-links-wrapper {
+  display: flex;
+  margin-bottom: 30px;
+  flex-flow: row wrap;
+
+  a {
+    width: 146px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 0 10px;
+    border-radius: 5px;
+    flex-shrink: 0;
+
+    &:nth-child(odd) {
+      background: #003e7e;
+    }
+
+    &:nth-child(even) {
+      background: #ffd200;
+    }
+  }
+}

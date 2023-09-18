@@ -1,0 +1,91 @@
+.page-strip {
+  .add_icon_bottom {
+    position: relative;
+    margin-bottom: 20px;
+    border-bottom: 7px solid #ed1c24;
+
+    .icon_head_bottom {
+      position: absolute;
+      width: 100%;
+      bottom: -12px;
+      z-index: 10;
+
+      .skew_icon_diamond {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        width: 14px;
+        height: 14px;
+        font: normal 100%/normal Arial, Helvetica, sans-serif;
+        color: rgba(0, 0, 0, 1);
+        -o-text-overflow: clip;
+        text-overflow: clip;
+        background: #00AEEF;
+        -webkit-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg);
+        -webkit-transform-origin: 0 100% 0deg;
+        transform-origin: 0 100% 0deg;
+        /* top: -12px; */
+        margin: 0 auto;
+        border: 2px solid #FFD200;
+      }
+    }
+
+    .apply_now_box {
+      text-align: center;
+      padding: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      max-height: 365px;
+      height: 100%;
+
+      .overlay-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      .overlay-container {
+        p {
+          color: #ffd200;
+          margin: 0;
+          font-size: 22px;
+        }
+
+        .inner_page-apply_now_box {
+          color: #ffd200;
+          margin: 0;
+          font-size: 32px;
+          line-height: 1.3;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+
+        small {
+          color: white;
+          font-size: 18px
+        }
+      }
+
+      .btn-container-overlay {
+        width: fit-content;
+        border: 4px solid #ffd200;
+        margin: 0 auto;
+        padding: 8px 80px;
+        transform: skew(-40deg);
+
+        a {
+          font-size: 18px;
+          display: inline-block;
+          text-transform: uppercase;
+          transform: skew(40deg);
+          color: #ffd200;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

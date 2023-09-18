@@ -1,0 +1,35 @@
+<?php
+
+add_action( 'wp_enqueue_scripts', 'mdd_custom_load_scripts' );
+function mdd_custom_load_scripts() {
+
+  /**
+   * Compied assets
+   *
+   **/
+  // check if resources have been compiled
+  $compiled_css = get_template_directory() . '/assets/css/styles.css';
+  if ( file_exists( $compiled_css ) ) {
+
+    wp_enqueue_style( 'font-family-cypress', "https://use.typekit.net/kjl3vvy.css" );
+    wp_enqueue_style( 'mdd_custom-theme', get_template_directory_uri() . '/assets/css/styles.css' );
+    wp_enqueue_style( 'owl-stylesheet-css', "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" );
+    wp_enqueue_style( 'sb-font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array() );
+    wp_deregister_script('jquery');
+    // wp_enqueue_script('jquery', "https://code.jquery.com/jquery-3.4.1.min.js" , array(), null, true);
+    wp_enqueue_script('jquery', "https://code.jquery.com/jquery-1.12.4.min.js" , array(), null, true);
+    wp_enqueue_script('owl-carousel-js',"https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js", array(), '1.0.0', true );
+    wp_enqueue_script('popper-js',"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js", array(), '1.0.0', true );
+    wp_enqueue_script( 'mdd_custom-theme-js', get_template_directory_uri() . '/assets/js/all.min.js', array(), '1.0.0', true );
+	//wp_enqueue_script( 'chatbot-js', 'https://cdn.edulla.ai/prod/Cypress/edulla.min.js', array(), '1.0.0', true );
+  }
+
+  // add default theme styling
+  wp_enqueue_style( 'theme', get_template_directory_uri() . '/style.css' );
+}
+
+function cypresscollege_body_class($classes) {
+  $classes[] = 'home-page push';
+  return $classes;
+}
+add_filter('body_class', 'cypresscollege_body_class');

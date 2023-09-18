@@ -1,0 +1,128 @@
+<?php
+$main_blog_id = get_main_site_id();
+switch_to_blog($main_blog_id);
+// Admin > Theme Settings > Footer Settings
+$global_footer_super_background_image = (get_field('global_footer_super_background_image') != '')
+  ? get_field('global_footer_super_background_image')
+  : get_field('global_footer_super_background_image','option');
+
+$global_footer_super_address=(get_field('global_footer_super_address') != '')
+  ? get_field('global_footer_super_address')
+  : get_field('global_footer_super_address','option');
+
+$logo = (get_field('global_footer_logo') != '')
+  ? get_field('global_footer_logo')
+  : get_field('global_footer_logo','option');
+
+$anchor_link =(get_field('global_footer_sub_anchor_link') != '')
+  ? get_field('global_footer_sub_anchor_link')
+  : get_field('global_footer_sub_anchor_link','option');
+
+$anchor_link_text = $anchor_link ? $anchor_link['title'] : null;
+$anchor_link_url = $anchor_link ? $anchor_link['url'] : null;
+$anchor_link_target = $anchor_link['target'] ? $anchor_link['target'] : '_self';
+
+$footer_sub_address =(get_field('global_footer_sub_address') != '')
+  ? get_field('global_footer_sub_address')
+  : get_field('global_footer_sub_address','option');
+?>
+
+</div>
+</div>
+<footer>
+  <div class="main-footer" style="background-image: url(<?php echo $global_footer_super_background_image; ?>);">
+    <div class="container">
+      <div class="row footer-row justify-content-center">
+        <?php if($logo): ?>
+        <div class="col-lg-4 logo-info">
+          <img href="<?php echo esc_url(home_url( '/' ) ); ?>" class="logo-footer" src="<?php echo $logo; ?>" alt="Cypress College Footer Logo">
+          <div class="college-info">
+            <p><?php echo $global_footer_super_address;?> </p>
+          </div>
+
+          <hr class= "red" >
+          <?php if ( have_rows('global_footer_super_icons','option') ):?>
+          <ul class="social_link">
+            <?php while (have_rows('global_footer_super_icons','option')): the_row();?>
+              <?php $socialIcon = get_sub_field('icons', 'option');?>
+              <?php $socialUrl = get_sub_field('url', 'option');?>
+            <li>
+              <a class="footer-icon" href="<?php echo $socialUrl['url']; ?>" target="<?php echo $socialUrl['target'] ? $socialUrl['target'] : '_self'; ?>" ><span class="fa <?php echo $socialIcon; ?>"></span></a>
+            </li>
+            <?php endwhile;?>
+            <?php endif;?>
+          </ul>
+        </div>
+        <?php endif; ?>
+
+
+        <?php if ( have_rows('global_footer_super_menu_list','option') ):?>
+        <div class="col-lg-7 footer-nav">
+          <nav class="top-navigation">
+            <ul class="nav justify-content-between">
+              <?php while (have_rows('global_footer_super_menu_list','option')): the_row();?>
+                <?php $title= get_sub_field('global_footer_super_menu_list_title','option');?>
+                <?php $super_footer_menu = get_sub_field('global_footer_super_menu','option'); ?>
+              <li>
+                <p class="first"><?php echo $title; ?></p>
+                <?php
+                  wp_nav_menu(array(
+                    'menu' => $super_footer_menu
+                  ));
+                ?>
+              </li>
+            <?php endwhile;?>
+            </ul>
+          </nav>
+        </div>
+        <?php endif;?>
+      </div>
+    </div>
+  </div>
+
+  <div class="lower-footer">
+    <div class="container">
+      <div class="row">
+        <?php
+          $lower_navigation= get_field('global_footer_lower_navigation','option');
+          if(!empty($lower_navigation)):
+          ?>
+          <div class="col-12">
+            <?php
+              wp_nav_menu(array(
+                'menu' => $lower_navigation,
+                'menu_class' => 'lower-footer-nav nav justify-content-center'
+              ));
+            ?>
+          </div>
+        <?php endif;?>
+
+        <div class="col-12 lower-sub-footer justify-content-center">
+          <?php
+           $lower_sub_navigation=get_field('global_footer_lower_sub_navigation','option');
+           if(!empty($lower_sub_navigation)):
+            wp_nav_menu(array(
+              'menu' => $lower_sub_navigation,
+              'menu_class' => 'lower-sub-footer-nav nav justify-content-center'
+            ));
+            ?>
+          <?php endif;?>
+
+          <?php if ($anchor_link): ?>
+          <a href="<?php echo $anchor_link_url; ?>" class="sub-footer-link" target="<?php echo $anchor_link_target; ?>"><?php echo $anchor_link_text ;?></a>
+          <?php endif; ?>
+
+          <p><?php echo $footer_sub_address ;?></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<?php
+restore_current_blog();
+echo get_field('tracking_footer', 'option');
+wp_footer();
+
+?>
+
+</body></html>

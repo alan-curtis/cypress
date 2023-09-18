@@ -1,0 +1,48 @@
+.course-tabs {
+  .nav-tabs {
+    list-style: none !important;
+    flex-flow: row wrap;
+    padding-left: 0 !important;
+    border-bottom-width: 0;
+
+    .nav-item {
+      flex: 1;
+      margin-right: 5px;
+
+      .nav-link {
+        border-color: #e3e3e3;
+        background-color: #EBEBEB;
+        color: #666 !important;
+        height: 100%;
+
+        &:hover, &:focus {
+          background-color: #dcdcdc;
+        }
+
+        &.active {
+          border-color: #f0f0f0;
+          background-color: #ffffff;
+          border-top: 3px solid #ffb606;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    border: 1px solid #eee;
+
+    .tab-pane {
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      .persons-wrap {
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

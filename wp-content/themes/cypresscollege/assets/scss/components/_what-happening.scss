@@ -1,0 +1,124 @@
+/* WHATS HAPPENING SECTION */
+.whats-happening-row {
+  align-items: center;
+  padding-top: 23px;
+}
+
+.whats-happening-row .content h3 {
+  text-align: left;
+}
+
+.whats-happening-row .content hr.yellow {
+  margin: 15px 0;
+}
+
+.happening-cta .cta-column .cta {
+  border: 3px solid #0b3976;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.happening-cta .cta-column .cta a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+.happening-cta .cta-column .cta .content {
+  width: 66%;
+}
+
+.happening-cta .cta-column .cta .content {
+  text-align: left;
+}
+
+.happening-cta .cta-column .cta .image {
+  max-width: 55px;
+  margin-right: 20px;
+}
+
+.happening-cta .cta-column .cta .events-image img {
+  max-height: 59px;
+  padding-bottom: 5px;
+}
+
+.happening-cta .cta-column .cta .content h4 {
+  color: #0b3976;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+}
+
+.happening-cta .cta-column .cta .content .heading-four {
+  color: #0b3976;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+}
+
+hr.dark-blue {
+  background-color: #0b3976;
+  height: 2px;
+  width: 77%;
+  margin: 47px auto;
+}
+
+/* EXPLORE PROGRAMS */
+.explore-programs-wrapper {
+  justify-content: center;
+}
+
+.explore-programs-wrapper .span-5 {
+  flex: 0 0 19.6%;
+  max-width: 20%;
+  padding: 0px 5px;
+}
+
+.mh-height.department-listing-block-bottom-overlay {
+  background-color: #003366;
+  opacity: 0.88;
+  position: relative;
+  bottom: 54px;
+  height: 54px;
+  display: flex;
+  padding: 5px 10px;
+}
+
+.department-listing-block-link:hover .department-listing-block-bottom-overlay .heading-three {
+  text-decoration-color: #fff;
+  text-decoration: underline;
+}
+
+.mh-height.department-listing-block-bottom-overlay:hover h3 {
+  text-decoration-color: #fff;
+  text-decoration: underline;
+}
+
+.mh-height.department-listing-block-bottom-overlay h3 {
+  color: #ffffff;
+  font-family: "myriad-pro", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.09px;
+  line-height: 1.3;
+  font-size: 20px;
+  line-height: 1.2;
+  font-size: 17px;
+  letter-spacing: 1px;
+  align-self: center;
+  margin-bottom: 0px;
+}
+
+.mh-height.department-listing-block-bottom-overlay .heading-three {
+  color: #ffffff;
+  font-family: "myriad-pro", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.09px;
+  line-height: 1.3;
+  font-size: 20px;
+  line-height: 1.2;
+  font-size: 17px;
+  letter-spacing: 1px;
+  align-self: center;
+  margin-bottom: 0px;
+}

@@ -1,0 +1,126 @@
+#main-content {
+  .page-template-full-width & {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gsc-control-cse {
+    padding: 0;
+  }
+}
+
+#page-content {
+  margin-top: 55px;
+  margin-bottom: 55px;
+
+  .hero--section + & {
+    margin-top: 0;
+  }
+  
+  a {
+    &:link,
+    &:visited {
+      color: $modern-blue;
+    }
+    &:hover {
+      color: $modern-cyan;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $blue;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.83rem;
+  }
+
+  h3 {
+    font-size: 1.66rem;
+  }
+
+  h4 {
+    font-size: 1.49rem;
+  }
+
+  h5 {
+    font-size: 1.32rem;
+  }
+
+  h6 {
+    font-size: 1.15rem;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  ul {
+    list-style-type: initial;
+    padding-left: 1.25rem;
+  }
+
+  li {
+    a {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .alignleft {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
+
+  .alignright {
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+}
+.news-content {
+  margin-bottom: 50px;
+  @include news_item();
+}
+
+.base_button{
+  @include base_button();
+}
+
+.reset_button{
+  @include reset_button();
+}
+
+header .header--wrapper {
+  padding-top: 5px;
+}
+
+#pagination{
+  text-align: center;
+}
+
+header .upper-navigation .phone:before {
+  float:left;
+  margin-top: 5px;
+}

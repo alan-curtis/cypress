@@ -1,0 +1,33 @@
+/* Testimonials Overrides */
+.testimonials {
+  .testimonials-row {
+    padding-top: 0;
+  }
+}
+
+.testimonials-carousel {
+  padding-top: 60px;
+}
+
+.testimonials-more-link {
+  position: absolute;
+  top: 25px;
+  right: 10rem;
+  transform: translateY(-50%);
+
+  @media screen and (max-width: 1024px) {
+    right: 6rem;
+  }
+
+  &:link,
+  &:visited {
+    color: #0b3976;
+  }
+}
+
+.owl-carousel-filter {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  transform: translateY(-50%);
+}

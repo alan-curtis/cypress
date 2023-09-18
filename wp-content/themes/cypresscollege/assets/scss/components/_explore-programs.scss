@@ -1,0 +1,37 @@
+.explore-programs-wrapper{
+  .business_cis {
+    background-color: #EDCAAA;
+    .heading-three{
+      color: $blue !important;
+    }
+  }
+  .career_technical_ed {
+    background-color:#492682;
+  }
+  .fine_arts {
+    background-color:#673604;
+  }
+  .health_services {
+    background-color:#4D5149;
+  }
+  .kinesiology {
+    background-color:#007D34;
+  }
+  .language_arts {
+    background-color:#FFFFFF;
+    border: 1px solid #D7D4D2;
+
+    .heading-three{
+      color: $blue !important;
+    }
+  }
+  .science_engineering_math {
+    background-color:#F78D1E;
+  }
+  .social_sciences {
+    background-color:#0057A5;
+  }
+  .exploratory {
+    background-color:#ED1C24;
+  }
+}

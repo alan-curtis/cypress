@@ -1,0 +1,45 @@
+.archive {
+  .news-content {
+    &.have-border{
+      margin-bottom: 60px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 60px;
+      .image{
+        padding-left: 15px;
+      }
+    }
+  }
+}
+.news-filters{
+  background: #f2f2f2;
+  padding: 35px;
+  border-top: 4px solid #FBB13F;
+  margin-bottom: 60px;
+  margin-top: 20px;
+
+  .news-filters-inner{
+    form{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+
+      .form-group{
+        padding-right: 30px;
+
+        label{
+          color: #333333;
+          font-weight: bold;
+        }
+
+        .form-control{
+          border: 1px solid #333333;
+        }
+      }
+
+      .actions{
+        padding-top: 18px;
+      }
+    }
+  }
+}

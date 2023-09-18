@@ -1,0 +1,14 @@
+#main-content {
+  table {
+    width: 100%;
+    margin-bottom: 1em;
+    & + table {
+      margin-top: 10px;
+    }
+    td {
+      border: 1px solid $blue;
+      padding: 10px;
+      // width: 1%;
+    }
+  }
+}

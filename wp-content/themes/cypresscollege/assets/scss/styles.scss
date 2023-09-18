@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/**
+ * This file will be overwritten when the Bootstrap Framework source files
+ * are compiled using the SASS CSS pre-processor.
+ */
+
+/**
+* Include bootstrap
+ */
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css";
+
+// Bootstrap Override
+@import "base/bootstep-overrides";
+
+// Theme basic
+@import "base/variables";
+@import "base/typography";
+@import "base/mixins";
+@import "base/global";
+
+// Theme components
+@import "components/header";
+//@import "components/footers";
+//@import "components/hero-carousel";
+@import "components/sidebar";
+@import "components/accordion";
+@import "components/explore-programs";
+@import "components/hero-carousel";
+@import "components/news";
+@import "components/portfolio";
+@import "components/testimonials";
+@import "components/table";
+@import "components/department-listing";
+@import "components/feature_item_box";
+@import "components/page_strip";
+@import "components/course_tabs";
+@import "components/person_carousel";
+@import "components/tile_links";
+@import "components/archive";
+@import "components/person";
+@import "components/category_banner";
+@import "components/breadcrumb";
+@import "components/table_listing";
+@import "components/theme_override";
+
+
+// Theme page
+@import "page/home";
+@import "page/program";

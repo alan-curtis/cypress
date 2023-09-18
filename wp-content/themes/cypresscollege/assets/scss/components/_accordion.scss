@@ -1,0 +1,118 @@
+/* Accordion*/
+.c-accordion {
+  &__title {
+    background-color: $blue;
+    text-align: left;
+    padding: 0.6rem 1rem;
+    line-height: normal;
+    font-weight: bold;
+    outline: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+
+    #page-content & {
+      color: $yellow;
+      font-size: 1rem;
+    }
+
+    &:after {
+      right: 1rem;
+      color: $yellow;
+      font-weight: bold;
+    }
+
+    .is-open & {
+      background-color: $modern-blue;
+    }
+
+    .home__accordion-main-menu .col-12:last-of-type & {
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    padding: 0.6rem 1rem;
+    //user-select: none;
+    //-moz-user-select: none;
+    //-ms-user-select: none;
+    //-webkit-user-select: none;
+    border: 1px solid $gray-400;
+    border-top-width: 0;
+    margin-bottom: 1rem;
+  }
+
+  &__item {
+    &.is-open {
+      .c-accordion__title {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.home__accordion-main-menu {
+  margin-bottom: 30px;
+}
+
+.accordion-wrap {
+  .card {
+    margin-bottom: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 0;
+
+    .card-header {
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      transition: 0.4s;
+      background-color: white;
+      padding: 0;
+      border-bottom: 1px solid #dcdcdc;
+
+      button {
+        color: #003e7e;
+        text-transform: uppercase;
+        padding: 10px;
+        display: block;
+        width: 100%;
+        text-align: left;
+        line-height: 30px;
+        font-size: 15px;
+        font-weight: bold;
+
+        &:hover{
+          color: #333333;
+          text-decoration: none;
+        }
+
+        &:before {
+          font-family: FontAwesome;
+          content: '\f106';
+          font-weight: bold;
+          float: left;
+          padding-right: 12px;
+          margin-left: 5px;
+          color: #003e7e;
+          height: 31px;
+          width: 30px;
+        }
+
+        &[aria-expanded="true"]{
+          &:before {
+            content: "\f107";
+          }
+        }
+      }
+    }
+
+    .card-body{
+      p{
+        font-size: 15px;
+      }
+    }
+  }
+}

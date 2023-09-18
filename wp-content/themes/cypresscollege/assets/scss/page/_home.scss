@@ -1,0 +1,28 @@
+body.home{
+  .top-navigation{
+    .hammy{
+      display: none;
+    }
+  }
+}
+
+.c-accordion__title{
+  color: $yellow;
+  font-size: 1rem;
+}
+.home__accordion-main-menu{
+  display: none;
+}
+@media (max-width: 768px) {
+  .home__accordion-main-menu{
+    display: block !important;
+    .c-accordion__content{
+      a{
+        color: $blue;
+        display: block;
+        font-weight: bold;
+        line-height: 26px;
+      }
+    }
+  }
+}

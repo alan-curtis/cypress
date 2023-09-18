@@ -1,0 +1,117 @@
+.persons-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+
+  .owl-prev, .owl-next {
+    top: 16px;
+  }
+
+  .owl-next {
+    right: 1rem;
+  }
+
+  .owl-prev {
+    right: 3rem;
+  }
+
+  .persons-carousel {
+    .person-content {
+      .content {
+        .person-header {
+          margin-bottom: 20px;
+
+          .title {
+            .link {
+              font-size: 16px;
+              font-weight: bold;
+              color: #333333 !important;
+              text-decoration: none;
+              margin-right: 5px;
+            }
+
+            a {
+              color: #0a3975 !important;
+            }
+          }
+
+          .sub-title {
+            small {
+              font-size: 14px;
+            }
+          }
+        }
+
+        p {
+          font-size: 15px;
+          line-height: 18px;
+        }
+
+        .person-footer {
+          bottom: 0;
+          display: flex;
+          justify-content: space-between;
+          flex-flow: row wrap;
+          width: 100%;
+
+          .link, .link i {
+            font-weight: bold;
+
+            i {
+              margin-left: 5px;
+            }
+          }
+
+          .all-program {
+            @include base_button();
+          }
+        }
+      }
+    }
+  }
+
+  &.my-cypress-story {
+    padding-left: 60px;
+    padding-right: 60px;
+
+    .persons-carousel {
+      padding: 10px;
+
+      .owl-stage-outer {
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+        background: #f2f2f2;
+      }
+    }
+
+    .owl-next, .owl-prev {
+      top: calc(50% - 10px);
+
+      span {
+        border-width: 0;
+        font-size: 0;
+        width: 20px;
+        height: 35px;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        display: block;
+      }
+    }
+
+    .owl-next {
+      right: -4rem;
+
+      span {
+        background: url("../images/right-arrow.svg");
+      }
+    }
+
+    .owl-prev {
+      left: -4rem;
+
+      span {
+        background: url("../images/left-arrow.svg");
+      }
+    }
+  }
+}

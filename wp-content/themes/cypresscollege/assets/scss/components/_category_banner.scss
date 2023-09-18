@@ -1,0 +1,32 @@
+.top_site_main {
+  color: #fff;
+  position: relative;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-color: rgba(45,51,57,.95) !important;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+
+  .page-title-wrapper {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    .banner-wrapper {
+      overflow: hidden;
+      h1{
+        position: relative;
+        padding-left: 0;
+        background-color: rgba(105,164,211,0.6) !important;
+        display: inline !important;
+        line-height: 81px !important;
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 48px;
+        font-weight: 700;
+      }
+    }
+  }
+}

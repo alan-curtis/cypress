@@ -1,0 +1,454 @@
+/* FOOTER */
+footer .main-footer:before {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: inherit;
+  background-image: url("./images/red_bar_texture.png");
+  height: 36px;
+  object-fit: cover;
+  display: block;
+  top: -17px;
+  position: relative;
+}
+
+footer .main-footer {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: inherit;
+  background-image: url("./images/square_patter_bg.jpg");
+  height: 400px;
+  object-fit: cover;
+}
+
+footer .footer-row {
+  padding-top: 25px;
+}
+
+footer .main-footer img.logo-footer {
+  max-width: 240px;
+  max-height: 85px;
+  margin-bottom: 24px;
+}
+
+footer .main-footer .college-info {
+  color: #fff;
+  max-width: 180px;
+}
+
+footer .main-footer ul>li {
+  padding: 0px 20px;
+}
+
+footer .main-footer ul>li p {
+  font-size: 19px;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+footer .main-footer li ul.menu {
+  margin-top: 8px;
+  padding-left: 0px;
+}
+
+footer .main-footer li ul.menu li {
+  padding: 0px;
+}
+
+footer .main-footer li ul.menu li a {
+  font-size: 16px;
+  padding: 3px 0px;
+  margin-bottom: 0px;
+}
+
+footer .main-footer li ul.menu li a:hover {
+  text-decoration: underline;
+}
+
+footer .main-footer li {
+  list-style: none;
+}
+
+footer .main-footer li a {
+  color: $white;
+  font-family: "myriad-pro", sans-serif;
+  padding-left: 0px;
+}
+
+hr.red {
+  height: 2px;
+  background-color: #ec2227;
+  max-width: 250px;
+  margin: 20px 0;
+}
+
+footer .main-footer ul.social_link {
+  padding-left: 0px;
+}
+
+footer .main-footer ul.social_link li {
+  max-width: 45px;
+  padding: 0px;
+  margin: 0 auto;
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer .lower-footer {
+  background-color: $red;
+  padding: 15px 0px 25px;
+}
+
+footer .lower-footer ul.lower-footer-nav li a {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: $white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+footer .lower-footer .lower-sub-footer {
+  text-align: center;
+  margin-top: 18px;
+}
+
+footer .lower-footer .lower-sub-footer ul li a,
+footer .lower-footer .lower-sub-footer a,
+footer .lower-footer .lower-sub-footer p {
+  font-family: "myriad-pro", sans-serif;
+  color: black;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+}
+
+footer .lower-footer .lower-sub-footer ul li a,
+footer .lower-footer .lower-sub-footer a {
+  text-decoration: underline;
+  padding-bottom: 0px;
+}
+
+footer .lower-footer .lower-sub-footer p {
+  margin-top: 20px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+  .overview-blocks .block .image img {
+    max-width: 54px;
+  }
+
+  .overview-blocks .block a h4 {
+    font-size: 1rem;
+  }
+
+  .overview-blocks .block a .heading-four {
+    font-size: 1rem;
+  }
+
+  footer .main-footer ul>li {
+    padding: 0px 10px;
+  }
+
+  nav.main-navigation li.dropdown .dropdown-menu {
+    min-width: 215px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  nav.main-navigation li.dropdown .dropdown-menu {
+    min-width: 200px;
+  }
+
+  .hamburger-menu li.nav-social {
+    width: 33%;
+  }
+
+  #hero-carousel .hero-content {
+    left: 5%;
+    top: 70%;
+  }
+
+  #hero-carousel .owl-nav button {
+    top: 39%;
+  }
+
+  #hero-carousel:after {
+    top: -33px;
+  }
+
+  .block-cta .interior-cta {
+    padding: 15px 10px 10px;
+  }
+
+  .block-cta .interior-cta .content {
+    max-width: 110px;
+  }
+
+  .block-cta .interior-cta .image {
+    max-width: 74px;
+    margin-right: 10px;
+  }
+
+  .overview-blocks .block a {
+    padding: 20px 5px;
+    margin: 10px 10px;
+  }
+
+  .block-cta .interior-cta .content h4 {
+    font-size: 1.2rem;
+  }
+
+  .block-cta .interior-cta .content .heading-four {
+    font-size: 1.2rem;
+  }
+
+  .owl-prev {
+    right: 3.5rem;
+  }
+
+  .owl-next {
+    right: 1rem;
+  }
+
+  footer .main-footer {
+    height: 600px;
+  }
+
+  footer .main-footer ul>li {
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .explore-programs-wrapper .span-5 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .upper-navigation .mobile-hidden {
+    display: none;
+  }
+
+  header .upper-navigation {
+    padding: 10px 0px;
+  }
+
+  header .header--wrapper {
+    padding: 10px 15px;
+  }
+
+  nav.main-navigation ul.desktop-nav {
+    display: none;
+  }
+
+  #hero-carousel .hero-content h1 {
+    font-size: 2.1rem;
+  }
+
+  #hero-carousel .hero-content .heading-one {
+    font-size: 2.1rem;
+  }
+
+  #main-content {
+    padding-top: 127px;
+  }
+
+  .happening-cta .cta-column .cta {
+    margin: 0px 15px 15px 15px;
+    padding: 20px 10px;
+  }
+
+  footer .footer-row {
+    padding-top: 10px;
+  }
+
+  footer .main-footer img.logo-footer {
+    max-width: 280px;
+  }
+
+  .logo-info {
+    text-align: center;
+  }
+
+  footer .main-footer .college-info {
+    margin: 0 auto;
+  }
+
+  footer .lower-footer ul.lower-footer-nav li a {
+    padding: 0.5rem 0.2rem;
+  }
+
+  hr.red {
+    margin: 10px auto;
+  }
+
+  footer .main-footer ul>li {
+    padding: 10px 15px;
+  }
+
+  footer .main-footer {
+    height: 700px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .hamburger-menu li.first {
+    width: 32%;
+    padding-left: 2.921569%;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .hamburger-menu li.first.nav-social {
+    width: 310px;
+    display: block;
+    position: relative;
+    left: 0px;
+    padding-left: 2.921569%;
+  }
+
+  #hero-carousel.owl-carousel .owl-item {
+    height: 315px;
+  }
+
+  #hero-carousel.owl-carousel .owl-item img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  #hero-carousel .owl-nav button {
+    top: 45%;
+  }
+
+  #hero-carousel .owl-nav button span {
+    font-size: 65px;
+  }
+
+  #hero-carousel .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  #hero-carousel .hero-content .heading-one {
+    font-size: 1.8rem;
+  }
+
+  #hero-carousel .hero-content .heading-five {
+    color: #fff;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+  }
+
+  #hero-carousel .hero-content {
+    left: 0px;
+    right: 0px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .banner-cta {
+    flex-direction: column;
+  }
+
+  .banner-cta .block-cta {
+    max-width: 95%;
+    margin: 5px auto 5px;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .happening-cta .cta-column .cta {
+    margin: 0px 0 15px 0;
+  }
+  .cypress-banner{
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #hero-carousel .owl-nav button.owl-prev {
+    right: 0px;
+    left: 0px;
+  }
+
+  #hero-carousel .hero-content h5 {
+    font-size: 1rem;
+  }
+
+  #hero-carousel .hero-content .heading-five {
+    font-size: 1rem;
+  }
+
+  .cta-coulmn {
+    padding: 0px 15px;
+  }
+
+  .explore-programs-wrapper {
+    justify-content: flex-start;
+  }
+
+  .explore-programs .explore-programs-wrapper .department-listing-block {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 5px;
+    max-height: unset;
+  }
+
+  .mh-height.department-listing-block-bottom-overlay h3 {
+    font-size: 15px;
+    letter-spacing: 0.7px;
+  }
+
+  .mh-height.department-listing-block-bottom-overlay .heading-three {
+    font-size: 15px;
+    letter-spacing: 0.7px;
+  }
+
+  .mh-height.department-listing-block-bottom-overlay {
+    bottom: 60px;
+    height: 60px;
+  }
+
+  .latest-news .item .card {
+    width: 18rem !important;
+    margin: 0 auto;
+  }
+
+  footer .main-footer {
+    height: 810px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hamburger-menu li.first {
+    width: 49%;
+    padding-left: 2.921569%;
+    float: unset;
+    display: inline-block;
+  }
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 375px) {
+  footer .main-footer ul>li {
+    padding: 10px 2px;
+  }
+}
+
+/* @media screen and (min-width: 825px) and (max-width:844px) {
+    .container.banner-widget {
+        max-width: 100%;
+    }
+} */

@@ -1,0 +1,16 @@
+/* News */
+.news-more-link {
+  position: absolute;
+  top: 25px;
+  right: 10rem;
+  transform: translateY(-50%);
+
+  @media screen and (max-width: 1024px) {
+    right: 6rem;
+  }
+
+  &:link,
+  &:visited {
+    color: #0b3976;
+  }
+}
